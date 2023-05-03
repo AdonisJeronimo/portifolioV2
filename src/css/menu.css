@@ -55,7 +55,7 @@
 }
 
 .nav-link:hover{
-    color: red;
+    color: var(--first-color);
 }
 
 .nav-icons{

@@ -1,7 +1,7 @@
 :root{
     --header-height: 3rem;
     /* FAVORITE COLOR */
-    --hue-color:250;
+    --hue-color:230;
 
 /* HSL COLORS */
     --first-color:hsl(var(--hue-color), 74%, 62%);
@@ -35,11 +35,11 @@
     --mb-0-25: 0.25rem;
     --mb-0-5: 0.5rem;
     --mb-0-75: 0.75rem;
-    --mb-0-1: 0.1rem;
-    --mb-0-1-5: 1.5rem;
-    --mb-0-2: 2rem;
-    --mb-0-2-5: 2.5rem;
-    --mb-0-3: 3rem;
+    --mb-1: 0.1rem;
+    --mb-1-5: 1.5rem;
+    --mb-2: 2rem;
+    --mb-2-5: 2.5rem;
+    --mb-3: 3rem;
 
     /* z-index */
 
