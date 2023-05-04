@@ -153,3 +153,130 @@ html{
     display: inline-flex;
     align-items: center;
 }
+
+/* ABOUT */
+
+.about-img{
+    width: 200px;
+    border-radius: .5rem;
+    justify-self: center;
+    align-self: center;
+}
+
+.about-description{
+    text-align: center;
+    margin-bottom: var(--mb-2-5);
+}
+
+/* SKILLS */
+
+.knowledge {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.knowledge ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.knowledge ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid var(--first-color-alt);
+    padding: 5px;
+    margin: 4px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.indicator {
+    padding-top: 50px;
+}
+
+.r1 {
+    color: #fff;
+    background: var(--first-color);
+    opacity: 0.9;
+    filter: drop-shadow(0 0px 5px var(--first-color)) drop-shadow(0 1px 1px var(--first-color));
+}
+
+.r1:hover {
+    transform: translateY(-5px);
+}
+
+.r2 {
+    border: transparent;
+    opacity: 0.9;
+    color: var(--first-color-alt);
+}
+
+.r3 {
+    color: #000;
+    opacity: 0.5;
+}
+
+/* PORTIFOLIO */
+
+.portfolio-container{
+    overflow: initial;
+}
+
+.portfolio-content{
+    padding: 0 1.5rem;
+}
+
+.portfolio-img{
+    width: 265px;
+    border-radius: .5rem;
+    justify-self: center;
+}
+
+.portfolio-title{
+    font-size: var(--h3-font-size);
+    margin-bottom: var(--mb-0-5);
+}
+.portfolio-description{
+    margin-bottom: var(--mb-0-75);
+}
+
+.portfolio-button:hover .button-icon{
+    transform: translateX(0.25rem);
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after{
+    content: " ";
+}
+
+.swiper-portfolio-icon{
+    font-size: 2rem;
+    color: var(--first-color);
+}
+
+.swiper-button-prev{
+    left: -0.5rem;
+}
+
+.swiper-button-next{
+    right: -0.5rem;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets{
+    bottom: -2.5rem;
+}
+.swiper-pagination-bullet-active{
+    background-color: var(--first-color);
+}
+
+.swiper-button-prev,
+.swiper-button-next,
+.swiper-pagination-bullet{
+    outline: none;
+}
