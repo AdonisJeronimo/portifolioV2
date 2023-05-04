@@ -1,0 +1,27 @@
+/* for small devices */
+
+@media screen  and (max-width:350px){
+    .container{
+       text-align: center;
+    }
+}
+.knowledge ul li{
+    justify-content: space-around;
+    align-items: center;
+    border: 3px solid var(--first-color-alt);
+    padding: 3px;
+    margin: 1px;
+}
+
+.nav-menu{
+    padding: 2rem 0.25rem 4rem;
+}
+
+.nav-list{
+    column-gap: 0;
+}
+
+/* for medium devices */
+
+
+/* for large devices */
