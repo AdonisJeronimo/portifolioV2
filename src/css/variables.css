@@ -1,11 +1,14 @@
 :root{
     --header-height: 3rem;
-    /* FAVORITE COLOR */
-    --hue-color:230;
+    /* MAIN COLOR */
+    --hue-color:240;
+    --saturation: 62%; 
+    --lightness:44%;
+
 
 /* HSL COLORS */
-    --first-color:hsl(var(--hue-color), 74%, 62%);
-    --first-color-second:hsl(var(--hue-color), 74%, 62%);
+    --first-color:hsl(var(--hue-color),var(--saturation), var(--lightness));
+    --first-color-second:hsl(var(--hue-color), var(--saturation), var(--lightness));
     --first-color-alt:hsl(var(--hue-color), 57%, 53%);
     --first-color-lighter:hsl(var(--hue-color), 92%, 85%);
     --title-color:hsl(var(--hue-color), 8%, 15%);
