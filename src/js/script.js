@@ -71,3 +71,23 @@ let swiper = new Swiper(".portfolio-container", {
   };
 
   window.addEventListener('scroll',scrollUp);
+
+  // Confirmation alert (email)
+  
+  const submit = document.getElementById('submit');
+  submit.addEventListener('click',confirmSend)
+
+  function confirmSend(){
+   const nameForm = document.getElementById('name');
+   const emailForm = document.getElementById('email');
+   const subjectForm = document.getElementById('subject');
+   const messageForm = document.getElementById('message');
+
+
+    Swal.fire({
+      icon: 'success',
+      title: 'A sua mensagem foi enviada!',
+      text: 'Retornarei o e-mail o mais breve possível. 😉',
+      confirmButtonColor: 'var(--first-color)'
+    })
+};
