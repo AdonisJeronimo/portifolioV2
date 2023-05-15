@@ -17,6 +17,8 @@
     --input-color:hsl(var(--hue-color), 70%, 96%);
     --body-color:hsl(var(--hue-color), 60%, 99%);
     --container-color:#fff;
+    --white:#fff;
+    --black: #000;
     --invalid-field: hsl(0, 78%, 56%);
 
     /* FONT AND TYPOGRAPHY */

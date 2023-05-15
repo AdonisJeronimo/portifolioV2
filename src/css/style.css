@@ -80,29 +80,34 @@ html{
     transform: scale(115%);
 }
 
-.home-blob{
-    width: 200px;
-    fill: var(--first-color);
-}
+.home-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
 
-.home-blob-img{
-    width: 170px;
+}
+.home-logo{
+    font-size: 10rem;
+    color: var(--first-color);
+    padding-right: 2.5rem;
+    filter: drop-shadow(0 0px 5px var(--first-color));
 }
 
 .home-data{
     text-align: center;
     grid-column: 1/3;
-    /* max-width: 320px;  */
 }
 
 .home-title{
     text-align: center;
-    border-right: 2px solid black;
+    border-right: 2px solid var(--black);
     font-size: 1.5rem;
     white-space: nowrap;
     overflow: hidden;
     text-align: start;
     padding: 0 1.5rem;
+
 }
 .typing-animation{
     animation: blinkCursor 500ms steps(40) infinite normal,
@@ -120,7 +125,7 @@ html{
 
 @keyframes blinkCursor{
     from{
-        border-right-color: black;
+        border-right-color: var(--black);
     }
     to{
         border-right-color: transparent;
@@ -173,7 +178,7 @@ html{
 .button{
     display: inline-block;
     background-color: var(--first-color);
-    color: #fff;
+    color: var(--white);
     padding: 1rem;
     border-radius: 0.5rem;
     font-weight: var(--font-medium);
@@ -241,10 +246,9 @@ html{
 }
 
 .r1 {
-    color: #fff;
+    color: var(--white);
     background: var(--first-color);
     opacity: 0.9;
-    /* filter: drop-shadow(0 0px 5px var(--first-color)) drop-shadow(0 1px 1px var(--first-color)); */
 }
 
 .r1:hover {
@@ -258,12 +262,11 @@ html{
 }
 
 .r3 {
-    color: #000;
+    color:var(--black);
     opacity: 0.5;
 }
 
 /* PORTIFOLIO */
-
 .portfolio-container{
     overflow: initial;
 }
@@ -327,7 +330,6 @@ html{
 }
 
 /* CONTACT */
-
 .contact-container{
     row-gap: 3rem;
 }
@@ -350,7 +352,6 @@ html{
 .contact-subtitle{
     font-size: var(--small-font-size);
     color: var(--text-color-light);
-
 }
 
 #form-btn{
@@ -384,13 +385,11 @@ textarea{
 
 .span-required{
     font-size: var(--small-font-size);
-    color: red;
+    color: var(--invalid-field);
     display: none;
 }
 
-
 /* FOOTER */
-
 .footer{
     padding-top: 2rem;
     text-align: center;
@@ -435,7 +434,7 @@ textarea{
 .footer-copy{
     font-size: var(--smaller-font-size);
     text-align: center;
-    color: #fff;
+    color: var(--white);
     margin-top: var(--mb-3);
 }
 
@@ -443,7 +442,7 @@ textarea{
 .footer-subtitle,
 .footer-link,
 .footer-social{
-    color: #fff;
+    color: var(--white);
 }
 
 /* SCROLL UP */
@@ -466,7 +465,7 @@ textarea{
 
 .scroll-up-icon{
     font-size: 1.5rem;
-    color: #fff;
+    color: var(--white);
 }
 
 .show-scroll{

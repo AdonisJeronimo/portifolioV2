@@ -1,4 +1,9 @@
 /* for small devices */
+@media (max-width:320px){
+    .home-title{
+        font-size: 1.3rem;
+    }
+}
 
 @media screen and (max-width:350px) {
     .container {
@@ -19,12 +24,6 @@
     .home-content {
         grid-template-columns: .25fr 3fr;
     }
-
-    .home-blob {
-        width: 180px;
-    }
-
-    
 
     /* SKILL */
     .knowledge ul li {
@@ -150,10 +149,6 @@
         column-gap: 2rem;
     }
 
-    .home-blob {
-        width: 270px;
-    }
-
     .home-scroll {
         display: block;
     }
@@ -161,8 +156,6 @@
     .home-scroll-button {
         margin-left: 3rem;
     }
-    
-
 
     /* ABOUT */
     .about-container {
@@ -191,7 +184,6 @@
     .portfolio-content {
         align-items: center;
     }
-
 
     /* FOOTER */
     .footer-container {
@@ -236,8 +228,9 @@
     }
 
     /* HOME */
-    .home-blob {
-        width: 320px;
+    .home-logo{
+        font-size: 15rem;
+        color: var(--first-color);
     }
 
     .home-socials {
