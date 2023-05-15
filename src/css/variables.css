@@ -17,6 +17,7 @@
     --input-color:hsl(var(--hue-color), 70%, 96%);
     --body-color:hsl(var(--hue-color), 60%, 99%);
     --container-color:#fff;
+    --invalid-field: hsl(0, 78%, 56%);
 
     /* FONT AND TYPOGRAPHY */
     --body-font: 'Poppins',sans-serif;

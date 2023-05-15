@@ -113,7 +113,7 @@
                     </div>
 
                     <div class="home-data">
-                        <h1 class="home-title">
+                        <h1 class="home-title line typing-animation">
                             Olá, meu nome é Adonis.
                         </h1>
                         <h3 class="home-subtitle">
@@ -140,8 +140,8 @@
 
         <!-- ABOUT -->
         <section class="about section" id="about">
-            <h2 class="section-title">Sobre</h2>
-            <span class="section-subtitle">Um pouco sobre mim.</span>
+            <h2 class="section-title">Sobre mim</h2>
+            <span class="section-subtitle">apenas um breve resumo sobre quem sou.</span>
             <div class="about-container container grid">
                 <img src="src/images/foto2.jpg" alt="" class="about-img">
 
@@ -211,12 +211,12 @@
                 <div class="swiper-wrapper">
                     <!-- PROJECT 1 -->
                     <div class="portfolio-content grid swiper-slide">
-                        <img src="src/images/Projeto2.png" alt="" class="portfolio-img">
+                        <img src="src/images/Projeto1.png" alt="Projeto Agência XYZ" class="portfolio-img">
 
                         <div class="portfolio-data">
                             <h3 class="portfolio-title">Agencia XYZ</h3>
                             <p class="portfolio-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis, quasi temporibus illum laudantium voluptatibus quam labore sequi, voluptatum maxime minus ipsam obcaecati fuga voluptates! Molestias aliquam et quam vitae non.</p>
-                            <a href="#" target="_blank" class="button button--flex button-small portfolio-button">
+                            <a href="https://agenciaxyz-afj.netlify.app/" target="_blank" class="button button--flex button-small portfolio-button">
                                 ACESSE
                                 <i class="uil uil-arrow-right button-icon"></i>
                             </a>
@@ -225,7 +225,7 @@
 
                     <!-- PROJECT 2 -->
                     <div class="portfolio-content grid swiper-slide">
-                        <img src="src/images/Projeto2.png" alt="" class="portfolio-img">
+                        <img src="src/images/Projeto2.png" alt="Projeto InfoMovies" class="portfolio-img">
 
                         <div class="portfolio-data">
                             <h3 class="portfolio-title">InfoMovies</h3>
@@ -239,7 +239,7 @@
 
                     <!-- PROJECT 3 -->
                     <div class="portfolio-content grid swiper-slide">
-                        <img src="src/images/Projeto3.png" alt="" class="portfolio-img">
+                        <img src="src/images/Projeto3.png" alt="Projeto WBurguer" class="portfolio-img">
 
                         <div class="portfolio-data">
                             <h3 class="portfolio-title">WBurguer</h3>
@@ -253,12 +253,12 @@
 
                     <!-- PROJECT 4 -->
                     <div class="portfolio-content grid swiper-slide">
-                        <img src="src/images/Projeto3.png" alt="" class="portfolio-img">
+                        <img src="src/images/Projeto4.png" alt="Projeto Aplicativo de receitas" class="portfolio-img">
 
                         <div class="portfolio-data">
-                            <h3 class="portfolio-title">--</h3>
-                            <p class="portfolio-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis, quasi temporibus illum laudantium voluptatibus quam labore sequi, voluptatum maxime minus ipsam obcaecati fuga voluptates! Molestias aliquam et quam vitae non.</p>
-                            <a href="#" target="_blank" class="button button--flex button-small portfolio-button">
+                            <h3 class="portfolio-title">Receita Facil</h3>
+                            <p class="portfolio-description">Receita Fácil é um aplicativo que ensina a preparar pratos saborosos, com informações detalhadas sobre o modo de preparo e até vídeos como base de ensino. O aplicativo também conta com um sistema de favoritos e compartilhamento de receitas.</p>
+                            <a href="https://github.com/AdonisJeronimo/appDeReceitas" target="_blank" class="button button--flex button-small portfolio-button">
                                 ACESSE
                                 <i class="uil uil-arrow-right button-icon"></i>
                             </a>
@@ -285,7 +285,10 @@
             <div class="contact-container container grid">
                 <div>
                     <div class="contact-information">
-                        <i class="uil uil-whatsapp contact-icon"></i>
+                        <a href="https://wa.me/+5511970810111" target="_blank" class="contact-social-icon">
+                            <i class="uil uil-whatsapp contact-icon"></i>
+                        </a>
+                        
                         
                         <div>
                             <h3 class="contact-title">
@@ -297,7 +300,10 @@
                         </div>
                     </div>
                     <div class="contact-information">
-                        <i class="uil uil-envelope-alt contact-icon"></i>
+                        <a href="mailto:adonisfjeronimo@gmail.com" target="_blank" class="contact-social-icon">
+                            <i class="uil uil-envelope-alt contact-icon"></i>
+                        </a>
+                       
                         
                         <div>
                             <h3 class="contact-title">
@@ -310,36 +316,48 @@
                     </div>
                 </div>
                   
+                <form
+                action="https://api.staticforms.xyz/submit"
+                method="post"
+                class="contact-form grid"
+                id="form"
+              >
+              <div class="contact-inputs grid">
+                <div class="contact-content required">
+                    <label for="name" class="contact-label">Nome</label>
+                    <input type="text" id="name" name="name" class="contact-input">
+                    <span class="span-required">O nome é muito curto</span>
+                </div>
+                <div class="contact-content required">
+                    <label for="email" class="contact-label">Email</label>
+                    <input type="email" id="email" name="email" class="contact-input">
+                    <span class="span-required">Informe um e-mail válido.</span>
+                </div>
+            </div>
+            <div class="contact-content required">
+                <label for="subject" class="contact-label">Assunto</label>
+                <input type="text" id="subject" name="subject" class="contact-input">
+                <span class="span-required">Determine o assunto.</span>
+            </div>
+            <div class="contact-content required">
+                <label for="message" class="contact-label">Mensagem</label>
+                <textarea name="message" id="message" cols="0" rows="7" class="contact-input"></textarea>
+                <span class="span-required">Digite sua mensagem.</span>
+            </div>
+       
 
-                <form action="https://api.staticforms.xyz/submit" method="post" id="form" class="contact-form grid">
-                    <div class="contact-inputs grid">
-                        <div class="contact-content">
-                            <label class="contact-label">Nome</label>
-                            <input type="text" id="name" name="name" class="contact-input">
-                        </div>
-                        <div class="contact-content">
-                            <label class="contact-label">Email</label>
-                            <input type="email" id="email" name="email" class="contact-input">
-                        </div>
-                    </div>
-                    <div class="contact-content">
-                        <label class="contact-label">Assunto</label>
-                        <input type="text" id="subject" name="subject" class="contact-input">
-                    </div>
-                    <div class="contact-content">
-                        <label class="contact-label">Mensagem</label>
-                        <textarea name="message" id="message" cols="0" rows="7" class="contact-input"></textarea>
-                    </div>
+            <div id="form-btn">
+                <button type="submit"  class="button button-flex">
+                    Enviar
+                    <i class="uil uil-message button-icon"></i>
+                </button>
 
-                    <div id="form-btn">
-                        <button type="submit" id="submit" class="button button-flex" >
-                            Enviar
-                            <i class="uil uil-message button-icon"></i>
-                        </button>
-                    </div>
-
-                    <input type="hidden" name="accessKey" value="ef1f0ff8-53af-4510-b55f-82761f2a19ac">
-                </form>
+                <input type="hidden" name="accessKey" value="ef1f0ff8-53af-4510-b55f-82761f2a19ac">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/confirmEmail.html">
+            </div>
+        </form>
+              
             </div>
         </section>
     </main>
@@ -392,7 +410,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="/src/js/swiper-bundle.min.js"></script>
-    <script src="/src/js/script.js"></script>
+    <script defer src="/src/js/script.js"></script>
     
 </body>
 </html>

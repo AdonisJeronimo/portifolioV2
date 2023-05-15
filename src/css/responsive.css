@@ -24,6 +24,8 @@
         width: 180px;
     }
 
+    
+
     /* SKILL */
     .knowledge ul li {
         justify-content: space-around;
@@ -37,6 +39,15 @@
         font-size: var(--normal-font-size);
     }
 }
+
+@media screen and (min-width: 415px) {
+    .typing-animation{
+        animation: none;
+        border-right: none;
+        text-align: center;
+    }
+}
+
 
 /* for medium devices */
 
@@ -52,6 +63,17 @@
     .home-img {
         order: 1;
         justify-self: center;
+    } 
+
+    /* ABOUT */
+    .about-img {
+        width: 450px;
+    }
+
+    .about-data{
+        position: relative;
+        top: 50%;
+        transform: translateY(-45%);
     }
 
     /* SKILL */
@@ -139,6 +161,7 @@
     .home-scroll-button {
         margin-left: 3rem;
     }
+    
 
 
     /* ABOUT */
@@ -147,7 +170,7 @@
     }
 
     .about-img {
-        width: 350px;
+        width: 450px;
     }
 
     .about-description {
@@ -219,6 +242,17 @@
 
     .home-socials {
         transform: translateX(-6rem);
+    }
+
+    /* ABOUT */
+    .about-img{
+        width:350px;
+    }
+
+    .about-data{
+        position: relative;
+        top: 50%;
+        transform: translateY(-40%);
     }
 
     /* SKILL */
