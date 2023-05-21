@@ -279,6 +279,9 @@ html{
     width: 265px;
     border-radius: .5rem;
     justify-self: center;
+    -webkit-box-shadow: 0px 9px 25px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 9px 25px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 9px 25px 0px rgba(0,0,0,0.75);
 }
 
 .portfolio-data{
@@ -297,6 +300,7 @@ html{
 .portfolio-button:hover .button-icon{
     transform: translateX(0.25rem);
 }
+
 
 .swiper-button-prev::after,
 .swiper-button-next::after{
